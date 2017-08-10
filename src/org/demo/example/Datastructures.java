@@ -1,11 +1,34 @@
 package org.demo.example;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Datastructures {
 
 	public static void main(String[] args)
+	{
+		
+		Map<String, List<String>> makeModel = new HashMap<String,List<String>>();
+		
+		List<String> hondaList = new ArrayList<String>();
+		hondaList.add("civic");
+		hondaList.add("prelude");
+		
+		List<String> toyotaList = new ArrayList<String>();
+		toyotaList.add("Corolla");
+		toyotaList.add("Rav 4");
+		
+		makeModel.put("Honda", hondaList);
+		makeModel.put("toyota", toyotaList);
+		
+		System.out.println(makeModel.get("Honda"));
+		System.out.println(makeModel.get("toyota"));
+		
+	}
+	
+	public void Listmethod()
 	{
 		// TODO Auto-generated method stub
 		List<String> arraylist = new ArrayList<String>();
