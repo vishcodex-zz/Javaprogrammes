@@ -13,9 +13,12 @@ public class Datastructures {
 		chararray[3] = 'L';
 		chararray[4] = 'O';
 		
-		for(int i=0; i<chararray.length;i++) 
+		//for each loop
+		//for (int i=0; i<chararray.length;i++)
+		
+		for(char c : chararray) 
 		{
-			System.out.println(chararray[i]);
+			System.out.print(c);
 		}
 	}
 
