@@ -1,11 +1,31 @@
 package org.demo.example;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Datastructures {
 
 	public static void main(String[] args)
 	{
 		// TODO Auto-generated method stub
-		char[] chararray = new char[5];
+		List<String> arraylist = new ArrayList<String>();
+		
+		arraylist.add("H");
+		arraylist.add("E");
+		arraylist.add("L");
+		arraylist.add("L");
+		arraylist.add("O");
+		
+		for (String s: arraylist)
+		{
+			System.out.print(s);
+		}
+		
+	}
+	
+	public void arrayMethod ()
+	{
+	char[] chararray = new char[5];
 		
 		chararray[0] = 'H';
 		chararray[1] = 'E';
